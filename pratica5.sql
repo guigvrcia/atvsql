@@ -181,3 +181,11 @@ INSERT INTO professor (id, nome, fac_prof, admissao) VALUES
 ('12300456789', 'Bellisa de Freitas Barbosa', 'ICBIM', '2012-10-11'),
 ('00123456789', 'Claudemir Kuhn Faccioli', 'ICBIM', '2016-01-26'),
 ('12003456789', 'Cláudio Vieira da Sulva', 'ICBIM', '2008-10-30');
+
+-- Inserido dados dos estudantes
+INSERT INTO estudante (id, nome, datanasc, fac_est, cra, tutor) VALUES
+('12311ICB207', 'Harry Styles', '1994-02-01', 'ICBIM', '90.0', '12345678900'),
+('12311ICB267', 'Aghata Nunes', '2001-11-16', 'ICBIM', '85.7', NULL),
+('12311ICB352', 'Jessyca Teodoro', '2002-10-04', 'ICBIM', '90.0', '12300456789'),
+('12311ICB234', 'Rodrigo Souza', '2003-07-14', 'ICBIM', '83.0', NULL),
+('12311ICB145', 'Oliver Rossini', '2004-02-15', 'ICBIM', '95.0', NULL);
