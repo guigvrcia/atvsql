@@ -163,14 +163,21 @@ CREATE TABLE horario_aula (
   CONSTRAINT fk_aula_turma FOREIGN KEY (id_turma) REFERENCES turma (id)
 );
 
+-- Dados da tabela faculdade
+INSERT INTO faculdade (sigla, nome, predio, orcamento) VALUES ('ICBIM', 'Instituto de Ciências Biomédicas', '2B211', '85000.00');
 
-INSERT INTO faculdade (sigla, nome, predio, orcamento) VALUES ('ICBIM', 'Instituto de Ciências Biomédicas', '2B211', '85000.00'),
-INSERT INTO disciplina (codigo, nome, fac_disc, ch) VALUES ('I31106', 'Anatomia Humana', 'ICBIM', '120'),
-                                                                                          ('I31109', 'Biossegurança', 'ICBIM', '30'),
-                                                                                          ('I3108', 'Biologia Celular', 'ICBIM', '60'),
-                                                                                          ('I31209', 'Biofísica Celular e de Sistemas', 'ICBIM', '75'),
-                                                                                          ('I31210', 'Histologia Básica e de Sistemas', 'ICBIM', '105'),
-INSERT INTO professor (id, nome, fac_prof, admissao) VALUES ('12345678900', 'Disney Oliver Sívieri Júnior', 'ICBIM', '2019-01-01'),
-                                                                                          ('00987654321', 'Ana Paula Coelho Balbi', 'ICBIM', '2008-10-29'),
-                                                                                          ('12300456789', 'Bellisa de Freitas Barbosa', 'ICBIM', '2012-10-11'),
-                                                                                          ('00123456789', 'Claudemir Kuhn Faccioli', 'ICBIM', '' )
+-- Inserindo dados da disciplina
+INSERT INTO disciplina (codigo, nome, fac_disc, ch) VALUES 
+('I31106', 'Anatomia Humana', 'ICBIM', '120'),
+('I31109', 'Biossegurança', 'ICBIM', '30'),
+('I3108', 'Biologia Celular', 'ICBIM', '60'),
+('I31209', 'Biofísica Celular e de Sistemas', 'ICBIM', '75'),
+('I31210', 'Histologia Básica e de Sistemas', 'ICBIM', '105');
+
+-- Inserindo dados dos professores
+INSERT INTO professor (id, nome, fac_prof, admissao) VALUES 
+('12345678900', 'Disney Oliver Sívieri Júnior', 'ICBIM', '2019-01-01'),
+('00987654321', 'Ana Paula Coelho Balbi', 'ICBIM', '2008-10-29'),
+('12300456789', 'Bellisa de Freitas Barbosa', 'ICBIM', '2012-10-11'),
+('00123456789', 'Claudemir Kuhn Faccioli', 'ICBIM', '2016-01-26'),
+('12003456789', 'Cláudio Vieira da Sulva', 'ICBIM', '2008-10-30');
