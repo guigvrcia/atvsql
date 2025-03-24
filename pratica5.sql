@@ -189,3 +189,13 @@ INSERT INTO estudante (id, nome, datanasc, fac_est, cra, tutor) VALUES
 ('12311ICB352', 'Jessyca Teodoro', '2002-10-04', 'ICBIM', '90.0', '12300456789'),
 ('12311ICB234', 'Rodrigo Souza', '2003-07-14', 'ICBIM', '83.0', NULL),
 ('12311ICB145', 'Oliver Rossini', '2004-02-15', 'ICBIM', '95.0', NULL);
+--salas
+--disciplinas na ordem: Anatomia, Anatomia-extra, Biossegurança, biologia celular,Biofisica celular e de sistemas, histologia básica de sistemas;
+INSERT INTO sala (predio, numero, capacidade) VALUES ('8C', '308', '60'),('8C', '306', '60'), ('8C', '125', '70'), ('2B', '236', '60'), ('8C', '309', '60'),('8C', '321', '60') ;
+--Inserido dados das turmas
+INSERT INTO turma (id, turma, semestre, ano, cod_disc, predio_s, n_sala) VALUES ('20', 'PR', '1', '2024', 'I31106', '8C', '308'),('19', 'EX', '2', '2024', 'I31106', '8C', '306'), ('20', 'PR', '1', '2024', 'I31109', '8C', '125'), ('20', 'PR', '1', '2024', 'I3108', '2B', '235'), ('20', 'PR', '1', '2024', 'I31209', '8C', '309'), ('19', 'PR', '2', '2023', 'I31210', '8C', '321'); 
+-- ensina
+INSERT INTO ensina (id_prof, id_turma) VALUES ('12345678900', '20'), ('12345678900', '19'), ('00987654321', '20'), ('12300456789', '20'), ('00123456789', '20'), ('12003456789', '19');   
+-- frequenta
+INSERT INTO frequenta(id_est, id_turma, nota) VALUES ('12311ICB207', '20', NULL), ('12311ICB267', '20', NULL), ('12311ICB352', '20', NULL),('12311ICB234', '19', NULL), ('12311ICB145', '19', NULL);
+--
